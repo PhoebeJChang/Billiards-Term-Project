@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using TMPro;
 
 public class HolesController : MonoBehaviour
 {
-    private int count;
+    private static int count; //MUST USE STATICCCCCCCCCC
+
+    public TextMeshProUGUI countText;
 
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
-
+        SetCountText();
     }
 
     void OnTriggerEnter(Collider other)
@@ -23,15 +27,16 @@ public class HolesController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = new Vector3((float)0, (float)0.5, (float)0);
+            other.gameObject.transform.position = new Vector3((float)0, (float)0.5, (float)-7);
             count = count - 1;
             SetCountText();
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void SetCountText()
     {
-        
+        countText.text = "Count: " + count.ToString();
     }
+
+    
 }
