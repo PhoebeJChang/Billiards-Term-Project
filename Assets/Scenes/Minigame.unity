@@ -996,6 +996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1001 &716831417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1565,6 +1566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,7 +1919,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332789061}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2045,6 +2047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1 &1513687523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 331538163870115946, guid: e6beae05c55661a49a202d2c981d9e7a, type: 3}
@@ -2063,6 +2066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1 &1531270783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,6 +2713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1 &2068762989
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,6 +2859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1531270785}
+  winTextObject: {fileID: 1332789061}
 --- !u!1 &2090361120
 GameObject:
   m_ObjectHideFlags: 0

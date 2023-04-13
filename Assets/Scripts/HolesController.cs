@@ -9,12 +9,15 @@ public class HolesController : MonoBehaviour
     private static int count; //MUST USE STATICCCCCCCCCC
 
     public TextMeshProUGUI countText;
+    public GameObject winTextObject;
 
     // Start is called before the first frame update
     void Start()
     {
         count = 0;
+
         SetCountText();
+        winTextObject.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -36,6 +39,10 @@ public class HolesController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+        if (count >= 9)
+        {
+            winTextObject.SetActive(true);
+        }
     }
 
     
