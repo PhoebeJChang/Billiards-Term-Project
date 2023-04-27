@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
 
 public class HolesController : MonoBehaviour
@@ -42,6 +41,10 @@ public class HolesController : MonoBehaviour
         if (count >= 9)
         {
             winTextObject.SetActive(true);
+        }
+        else
+        {
+            winTextObject.SetActive(false);
         }
     }
 
