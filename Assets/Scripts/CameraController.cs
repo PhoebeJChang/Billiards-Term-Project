@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public class CameraController : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;//camera and player distance
     public float speed = 12.0f; //player speed
     public float forceSpd = 9.0f; //player charge speed
-    private float force = 0.0f; //player已經蓄了多少力 的大小
+    public float force = 0.0f; //player已經蓄了多少力 的大小
 
     public float highestSpd = 50f;
 
@@ -29,9 +31,11 @@ public class CameraController : MonoBehaviour
     float x = 0.0f;
     float y = 0.0f;
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         //攝影機位置 - 母球位置 = 相對位置
         offset = transform.position - player.transform.position;
 
@@ -45,7 +49,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        //transform.position = player.transform.position + offset;
+    //transform.position = player.transform.position + offset;
 
         
         //mouse control
@@ -111,6 +115,7 @@ public class CameraController : MonoBehaviour
 
         return Mathf.Clamp(angle, min, max);
     }
+
 
    
 }
